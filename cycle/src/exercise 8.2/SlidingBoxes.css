@@ -1,0 +1,26 @@
+.slidingBox{
+  background-color: blueviolet;
+  margin: 10px;
+  animation-name: moveBox;
+  animation-duration: 2s;
+}
+.First-Box{
+  width: 50px;
+  height: 50px;
+}
+.Second-Box{
+  width: 200px;
+  height: 200px;
+}
+.Third-Box{
+  width: 100px;
+  height: 100px;
+}
+@keyframes moveBox {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(40rem);
+  }
+}

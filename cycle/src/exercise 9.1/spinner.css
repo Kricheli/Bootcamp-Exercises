@@ -1,0 +1,134 @@
+/* first spinner */
+body{
+  background-color: rgb(59, 59, 59);
+  display: flex;
+  
+}
+.threeJumpingDots{
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 0;
+}
+.dot{
+  background: rgb(121, 241, 211);
+  width: 5px;
+  height: 5px;
+  top: 0;
+  position: relative;
+  border-radius: 100%;
+  margin-right: 10px;
+  animation: animate1 2s forwards ease-in-out infinite;
+}
+@keyframes animate1 {
+  0%{
+          top: 0;
+          left: 0;
+  }
+  50%{
+          top: 10px;
+          left: 0;
+  }
+  100%{
+          top: 0;
+          left: 0;
+  }
+}
+.dot2{
+  background: rgb(121, 241, 211);
+  width: 5px;
+  height: 5px;
+  top: 0;
+  position: relative;
+  border-radius: 100%;
+  animation: animate2 2s forwards ease-in-out infinite;
+}
+@keyframes animate2 {
+  0%{
+          top: 0;
+          left: 0;
+  }
+  48%{
+          top: 8px;
+          left: 0;
+  }
+  60%{
+          top: 10px;
+          left: 0;
+  }
+  100%{
+          top: 0;
+          left: 0;
+  }
+}
+.dot3{
+  background: rgb(121, 241, 211);
+  width: 5px;
+  height: 5px;
+  top: 0;
+  margin: 10px;
+  position: relative;
+  border-radius: 100%;
+  animation: animate3 2s forwards ease-in-out infinite;
+}
+@keyframes animate3 {
+  0%{
+          top: 0;
+          left: 0;
+  }
+  50%{
+          top: 6px;
+          left: 0;
+  }
+  55%{
+          top: 8px;
+          left: 0;
+  }
+  65%{
+          top: 10px;
+          left: 0;
+  }
+  100%{
+          top: 0;
+          left: 0;
+  }
+}
+
+/* second spinner */
+.spinner::after{
+  content: '';
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  /* border: 1px rgb(133, 132, 132) solid; */
+  border-top: rgba(72, 177, 190, 0.658) 2px solid;
+  position: absolute;
+  background: rgb(59, 59, 59);
+  animation: anime1 0.2s forwards infinite ;
+}
+@keyframes anime1 {
+  to{
+          transform: rotate(1turn);
+  }
+  
+}
+
+.spinner1{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px rgb(141, 141, 141) solid;
+  border-top: rgba(72, 177, 190, 0.658) 2px solid;
+  background: rgb(59, 59, 59);
+  animation: anime1 0.5s forwards infinite ;
+  position: absolute;
+  left: 200px;
+}
+@keyframes anime1 {
+  to{
+          transform: rotate(1turn);
+  }
+  
+}
+
+/* third spinner */
