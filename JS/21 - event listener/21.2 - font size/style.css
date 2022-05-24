@@ -1,0 +1,16 @@
+body{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+}
+.header{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+box{
+        display: flex;
+        width: 100px;
+        height: 100px;
+}

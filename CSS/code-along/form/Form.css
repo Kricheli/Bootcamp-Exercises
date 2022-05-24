@@ -1,0 +1,152 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* 
+        -May want to add "border-box for "box-sizing so padding does not affect width
+        -Reset margin and padding 
+       */
+      }
+
+      body {
+        
+          background-color: #344a72;
+          color: white;
+          line-height: 1.8rem;
+      }
+
+      a {
+       text-decoration: none;
+      }
+
+      #container {
+              margin: 30px auto;
+              max-width: 400px;
+              padding: 20px;
+              color: #000;
+             
+              
+        /* 
+        -Remember, margin: auto on left and right will center a block element 
+        -I would also set a "max-width" for responsiveness
+        -May want to add some padding
+        */
+      }
+
+      .form-wrap {
+
+        background-color: white;
+        padding: 15px 25px;
+        box-shadow: 8px 8px 80px rgb(83, 83, 83);
+        
+        /* 
+          This is the white area around the form and heading, etc
+        */
+      }
+
+      .form-wrap h1,
+      .form-wrap p {
+        font-weight: lighter;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align: center;
+        /* 
+          May want to center these
+        */
+      }
+      .form-wrap .form-group {
+        margin-top: 15px;
+        font-family: 'Source Sans Pro', sans-serif;
+        
+        /* 
+          Each label, input is wrapped in .form-group
+        */
+      }
+
+      .form-wrap .form-group label {
+         
+        display: block;
+        color: #666;
+        text-align: left;
+        font-weight: lighter;
+        /* line-height: 35px; */
+        /* margin-left: 40px;
+        margin-top: 5px; */
+        /* 
+          Label should be turned into a block element
+        */
+      }
+
+      .form-wrap .form-group input {
+        
+        width: 100%;
+        border: 1px gray solid;
+        padding: 10px;
+        border-radius: 5px;
+        /* margin-left: 40px;
+        width: 300px;
+        height: 30px; */
+        
+
+        
+
+        /* 
+          Inputs should reach accross the .form-wrap 100% and have some padding
+        */
+      }
+
+      .form-wrap button {
+              
+        color: white;
+        width: 100%;
+        padding: 10px;
+        border-radius: 3px;
+        margin-top: 20px;
+        background-color: #49c1a2 ;
+        border: none;
+        /* margin-left: 80px;
+        margin-top: 20px; */
+        
+        /* 
+          Button should wrap accross 100% and display as block
+          Background color for button is #49c1a2
+        */
+      }
+
+      .form-wrap button:hover {
+
+        background-color: #37a08e;
+        cursor: pointer;
+        /* 
+          Hover background color for button is #37a08e
+        */
+      }
+
+      .form-wrap .bottom-text {
+
+        font-size: smaller;
+        margin-top: 20px;
+        /* 
+          Bottom text is smaller
+        */
+      }
+
+      footer {
+
+        text-align: center;
+        color: rgb(245, 245, 245);
+        margin-top: 10px;
+        font-family: 'Source Sans Pro', sans-serif;
+        
+        /* 
+        
+        Should be centered
+       */
+      }
+
+      footer a {
+
+        color: #49c1a2;
+        /* 
+          Footer link color is #49c1a2
+        */
+      }

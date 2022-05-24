@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style type="text/css">
+
+                *{
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                }
+                body{
+                        width: 100%;
+                        height: 100vh;
+                        background: rgba(72, 72, 241, 0.788);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                }
+                #btn{
+                        width: 200px;
+                        height: 70px;
+                        border: 4px solid gray;
+                        border-radius: 35px;
+                        font-size: 25px;
+                        font-weight: bold;
+                        color: red;
+                        cursor: pointer;
+                }
+                #btn:active{
+                        font-size: 23px;
+                        box-shadow: 6px -10px 16px #444;
+                        background-color: antiquewhite;
+                }
+
+        </style>
+</head>
+<body>
+        <button id="btn" onclick="Audio.play();">Subscribe</button>
+        <script type="text/javascript">
+                const Audio = new Audio();
+                audio.src=""
+        </script>
+        
+</body>
+</html>

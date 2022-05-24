@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+        <title>tooltip</title>
+        <style>
+
+                body{
+                        box-sizing: border-box;
+                        display: flex;
+                        /* flex-direction: column; */
+                        height: 100vh;
+                        
+                }
+                .container{
+                        height: 100%;
+                        text-align: left;
+                        width: 50vw;
+                        margin-top: 30px;
+                        line-height: 1.3rem;
+                        font-size: 1.3rem;
+                        /* padding: 30px; */
+                }
+               .span{
+                       position: relative;
+                       top: 0;
+                       right: 0;
+                       bottom: 0;
+                       left: 0;
+               }
+               .span::after{
+                       content: attr(data-tooltip);
+                       position: absolute;
+                       bottom: 20px;
+                       left: 0;
+                       width: 100%;
+                       height: 100%;
+                       background-color: yellow;
+                       border: rgb(219, 216, 64) 2px solid;
+                       border-bottom: 8px solid rgb(219, 216, 64) transparent transparent transparent;
+                       border-radius: 50px;
+                       text-align: center;
+                       font-size: 0.9rem;
+                       opacity: 0;
+               }
+               .span:hover::after{
+                       opacity: 1;
+                       cursor: pointer
+               }
+               .span:hover{
+                       cursor: pointer
+               }
+        </style>
+</head>
+<body>
+<div class="container">
+        <p><span class="span" <a href="#" data-tooltip="Pain"></a>Lorem</span> ipsum dolor, sit amet consectetur adipisicing elit. Porro quam vel pariatur eos consequatur dicta facere incidunt ducimus<span class="span" data-tooltip="no">dolore</span> vitae culpa amet quaerat, dignissimos delectus modi obcaecati ipsum enim quibusdam optio totam! Consequuntur debitis, molestias autem eos vero porro doloremque ea voluptatibus obcaecati nostrum sequi sed ipsa assumenda culpa reprehenderit, praesentium vitae, amet nemo unde ex hic fuga voluptatem laboriosam!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro quam vel pariatur eos consequatur dicta facere incidunt ducimus dolore vitae culpa amet quaerat, dignissimos delectus modi obcaecati ipsum enim quibusdam optio totam! Consequuntur debitis, molestias autem eos vero porro doloremque ea voluptatibus obcaecati nostrum sequi sed ipsa assumenda culpa reprehenderit, praesentium vitae, amet nemo unde ex hic fuga voluptatem laboriosam!</p>
+</div>
+</body>
+</html>

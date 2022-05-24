@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                .item{
+                        text-align: center;
+                        border-radius: 5%;
+                        /* border: 1px solid black; */
+                        padding: 40px;
+                        background-color: gray;
+                        font-family: Arial, Helvetica, sans-serif;
+                }
+                .container{
+                        display: grid;
+                        grid-gap: 1.4rem;
+                        grid-template-columns: 3, 1fr;
+                       
+                }
+                .item:first-child{
+                        background-color: red;
+                        grid-column: 1 /4;
+                        
+                }
+                .item:nth-child(2){
+                        background-color: blue;
+                        grid-row: 2 /4;
+                }
+                .item:nth-child(3){
+                        background-color: green;
+                        grid-column: 2 /4;
+                }
+                .item:nth-child(4){
+                        background-color: purple;
+                }
+                .item:last-child{
+                        background-color: purple;
+                }
+                
+        </style>
+</head>
+<body>
+        <div class="container">
+                <div class="item">item 1</div>
+                <div class="item">item 2</div>
+                <div class="item">item 3</div>
+                <div class="item">item 4</div>
+                <div class="item">item 5</div>
+        </div>
+        
+</body>
+</html>

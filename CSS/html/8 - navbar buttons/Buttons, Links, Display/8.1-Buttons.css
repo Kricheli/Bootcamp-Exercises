@@ -1,0 +1,150 @@
+
+
+body{
+        background: radial-gradient(#e66465, #9198e5);
+}
+*{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        /* background-color: rgb(83, 83, 83); */
+        text-align: center;
+}
+
+#butn1{
+        background-color: rgb(127, 212, 127);
+        border: grey;
+        border-width: 2px;
+        padding: 15px 40px;
+        font-size: larger;
+}
+
+#butn1:hover{
+        background-color: rgb(86, 161, 78);
+        cursor: pointer;
+}
+#butn2{
+        background-color: rgb(235, 42, 42);
+        border: grey;
+        border-width: 2px;
+        padding: 8px 25px;
+        /* font-size: smaller; */
+}
+#butn2:hover{
+        background-color:darkred;
+        cursor: pointer;
+}
+
+#butn3{
+        background-color: rgb(107, 162, 224);
+        border: grey;
+        border-width: 2px;
+        padding: 4px 10px;
+        font-size: x-small;
+}
+#butn3:hover{
+        background-color: darkblue;
+        cursor: pointer;
+}
+
+.roundButtons{
+        border-radius: 50px;
+        border: grey;
+        border-width: 2px;
+        font-size: x-small;
+}
+#butn4{
+        background-color: rgb(219, 129, 44);
+        padding: 15px 37px;
+
+}
+#butn4:hover{
+        background-color: rgb(124, 70, 4);
+        cursor: pointer;
+}
+#butn5{ 
+        background-color: rgb(236, 217, 38);
+        padding: 10px 30px;
+}
+#butn5:hover{
+        background-color: rgb(165, 165, 15);
+        cursor: pointer;
+}
+#butn6{ 
+        background-color: rgb(117, 114, 110);
+        padding: 8px 20px;
+        
+}
+#butn6:hover{
+        background-color: rgb(66, 66, 66);
+        cursor: pointer;
+} 
+.flatGhost{
+
+        background-color: transparent;
+        border-width: 2.5px;
+}
+
+#butn7{ 
+        border: green solid;
+        padding: 8px 30px;
+        font-size: small;
+}
+#butn7:hover{
+        background-color: green;
+        cursor: pointer;
+} 
+ #butn8{ 
+        border: rgb(192, 24, 24) solid;
+        padding: 4px 25px;
+        font-size: small;
+}
+#butn8:hover{
+        background-color: rgb(192, 24, 24);
+        cursor: pointer;
+} 
+#butn9{ 
+        border: rgb(86, 54, 230) solid;
+        padding: 2px 15px;
+        font-size: x-small;
+}
+#butn9:hover{
+        background-color:rgb(86, 54, 230);
+        cursor: pointer;
+} 
+ .roundGhost{ 
+        border: solid;
+        border-radius: 50px;
+        background-color: transparent;
+        border: 2.5px;
+}
+ 
+ #butn10{ 
+        border: rgb(230, 154, 54) solid;
+        padding: 13px 40px;
+        font-size: small;
+}
+#butn10:hover{
+        background-color:rgb(230, 154, 54);
+        cursor: pointer;
+} 
+#butn11{ 
+        border: rgb(252, 248, 45) solid;
+        padding: 8px 30px;
+        font-size: small;
+}
+#butn11:hover{
+        background-color:rgb(252, 248, 45);
+        cursor: pointer;
+}
+#butn12{ 
+        border: rgb(153, 153, 153) solid;
+        padding: 4px 24px;
+        font-size: x-small;
+}
+#butn12:hover{
+        background-color:rgb(153, 153, 153);
+        cursor: pointer;
+}
+#butn12:active{
+        font-size: 7px;
+}

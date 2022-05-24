@@ -1,0 +1,66 @@
+#header{
+        font-size: x-large;
+        font-style: italic;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        margin-right: 30px;
+}
+li a{
+        text-decoration: none;
+        color: black;
+        float: left;
+        margin-right: 10px;
+        font-size: smaller;
+        margin-top: 0;
+        text-align: center;
+
+}
+ul{
+        list-style: none;
+        display: inline;
+        margin: 0;
+}
+
+li a:hover{
+        background-color: lightgray;
+        text-decoration: underline;
+}
+.email{
+        text-decoration: none;
+        margin-left: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+        font-size: larger;
+}
+.email a:visited{
+        color: black;
+}
+a:hover{
+        color: gray;
+        text-decoration: underline;
+}
+
+#img{
+        /* float:right; */
+        border:1px solid gray;
+        width: 40%;
+        height: 40%;
+        float: left; 
+}
+
+/* Box 1 (About Paragraph)*/
+#box1{
+        font-family:'Courier New', Courier, monospace;
+        overflow:auto;
+        text-align: center;
+        margin: 0 30px 30px 550px ;
+}
+
+#contact{
+        font-family:'Courier New', Courier, monospace;
+        float: left;
+        overflow:auto;
+        text-align: left;
+        font-size: smaller;
+        margin: 60px 0 0 380px ;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                .item{
+                        text-align: center;
+                        border-radius: 5%;
+                        /* border: 1px solid black; */
+                        padding: 40px;
+                        background-color: gray;
+                        font-family: Arial, Helvetica, sans-serif;
+                }
+                .container{
+                        display: grid;
+                        grid-gap: 1.4rem;
+                        grid-column: 4 1fr;
+                        grid-template-areas: 
+                        'header header header header'
+                        'sidebar content content content'
+                        'sidebar2 sidebar2 sidebar2 sidebar2'
+                        'footer footer footer footer';
+                       
+                }
+                .item:first-child{
+                        background-color: red;
+                        grid-area: header;
+                        padding: 20px;
+                        
+                }
+                .item:nth-child(2){
+                        background-color: blue;
+                        grid-area: sidebar;
+                }
+                .item:nth-child(3){
+                        background-color: green;
+                        grid-area: content
+                }
+                .item:nth-child(4){
+                        background-color: purple;
+                        grid-area: sidebar2;
+                }
+                .item:last-child{
+                        background-color: yellow;
+                        grid-area: footer;
+                        padding: 20px;
+                }
+                @media(max-width:500px){
+                       .container{
+                               grid-template-areas:
+                               'header header header header'
+                               'sidebar sidebar sidebar sidebar'
+                               'content content content content'
+                               'sidebar2 sidebar2 sidebar2 sidebar2'
+                                 'footer footer footer footer';
+                       }
+                }
+                @media(max-width:768px)and(min-width:501px){
+                       .container{
+                               grid-template-areas:
+                               'header header header header'
+                               'sidebar content content content'
+                               'sidebar2 sidebar2 sidebar2 sidebar2'
+                                 'footer footer footer footer';
+                       }
+                }
+                @media(min-width:769px){
+                       .container{
+                               grid-template-areas:
+                               'header header header header'
+                               'sidebar content content sidebar2'
+                                 'footer footer footer footer';
+                       }
+                }
+               
+                
+        </style>
+</head>
+<body>
+        <div class="container">
+                <div class="item">Header</div>
+                <div class="item">Side-Bar</div>
+                <div class="item">content Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, voluptatem?</div>
+                <div class="item">Side-Bar2</div>
+                <div class="item">Footer</div>
+        </div>
+        
+</body>
+</html>
