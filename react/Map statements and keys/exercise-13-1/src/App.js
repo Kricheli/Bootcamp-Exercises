@@ -1,13 +1,15 @@
 import React, {Component} from 'react';
-import ReactDom from 'react-dom/client';
-import MessageData from './Components/MessageData';
+import Parent from './Components/11-1/Parent';
+
+// import MessageData from './Components/MessageData';
 
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <div>
-        <MessageData/>
+        {/* <MessageData/> */}
+        <Parent/>
       </div>
     );
   }
