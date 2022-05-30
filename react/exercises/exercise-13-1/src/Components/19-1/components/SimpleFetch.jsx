@@ -7,15 +7,8 @@ const SimpleFetch=()=>{
     const rand=Math.ceil(Math.random()*6 +1);
     const search=async()=>{
       const {data}=await API.get(`${rand}`);
-      try{
-        setResults({
-          title:data.title,
-          director:data.director,
-        })
-      }
-      catch(err){
-        console.log(err);
-      }
+      setResults(data)
+      console.log(setResults(data));
     }
     search();
   },[]);

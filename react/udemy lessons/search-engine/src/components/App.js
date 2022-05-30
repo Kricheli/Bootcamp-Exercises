@@ -1,5 +1,6 @@
 import React from "react";
 import Accordion from "./widgets_app/components/Accordion";
+import Search from "./widgets_app/components/Search";
 // import SearchBar from "./youtube/components/SearchBar";
 // import unsplash from "../api/unsplash";
 // import SearchBar from "./SearchBar";
@@ -23,7 +24,8 @@ const items=[
 const App=()=> {
   return (
     <div>
-        <Accordion items={items}/>
+        {/* <Accordion items={items}/> */}
+        <Search/>
       </div>
     );
     {/* <div className="ui container"> */}

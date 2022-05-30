@@ -1,13 +1,12 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-// import {API} from './API';
+
 
 const CountriesOfTheWorld = () => {
   const [term, setTerm] = useState("");
   const [results, setResults] = useState([]);
   const [filteredResults, setFilteredResults]=useState([]);
   
-  console.log(results);
   useEffect(() => {
     const search = async () => {
       const { data } = await axios.get("https://restcountries.com/v3.1/all");
@@ -26,8 +25,8 @@ const CountriesOfTheWorld = () => {
   },[term])
 
   const rendedResults = filteredResults.map((result) => {
-    return <div key={result.cca2}>{result.name.common}</div>;
-  });
+    return (<li key={result.cca2}>{result.name.common}</li>
+  )});
   return (
     <div>
       <div className="input">
